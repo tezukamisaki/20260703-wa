@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>動物スロット</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <h1>🎰 動物スロット 🎰</h1>
+
+  <p class="animal">
+    {{ slot1 }} {{ slot2 }} {{ slot3 }}
+  </p>
+
+  <h2>{{ message }}</h2>
+
+  <button @click="slot">スロットを回す！</button>
+</div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
